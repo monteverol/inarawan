@@ -1,0 +1,58 @@
+.Cashier_intro {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(38, 34, 29, 1);
+    padding: 2rem 4rem;
+}
+
+.Cashier_intro .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 19%;
+}
+
+.Cashier_intro .header h1 {
+    color: var(--primary);
+    font-family: "Rubik", sans-serif;
+    font-weight: 700px;
+    font-size: 4em;
+}
+
+.Cashier_intro .header span {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #DADADA;
+    font-size: 2em;
+}
+
+.Cashier_intro hr {
+    color: var(--primary);
+}
+
+.Cashier_intro .navigation {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+.Cashier_intro .navigation .tile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Cashier_intro .navigation .tile img {
+    width: 3em;
+    margin-right: 2em;
+}
+
+.Cashier_intro .navigation .tile h1 {
+    color: #DADADA;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700px;
+    font-size: 2.5em;
+}

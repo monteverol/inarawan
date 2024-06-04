@@ -1,0 +1,43 @@
+.Queue {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #26221D;
+}
+
+.Queue .content {
+    height: 90%;
+    width: 100%;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Queue .content h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #C9C9C9;
+    height: 10%;
+    margin-bottom: 1em;
+}
+
+.Queue .content .list {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.Queue .content .list .queue-order {
+    width: 250px;
+    padding: 1em;
+    background-color: antiquewhite;
+    border-radius: 0.5em;
+    height: auto;
+}

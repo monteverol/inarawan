@@ -1,0 +1,187 @@
+.OrderTransaction {
+    height: 100vh;
+    width: 100%;
+    background-color: #26221D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.OrderTransaction .content {
+    height: 100%;
+    width: 92.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.OrderTransaction .content .products {
+    width: 65%;
+    height: 90%;
+    background-color: #564B44;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.OrderTransaction .content .products .tabs {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.OrderTransaction .content .products .tabs .tab {
+    background-color: #7F7670;
+    width: 25%;
+    border: none;
+    color: #C0B9B9;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 1em;
+    text-align: left;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+}
+
+.OrderTransaction .content .products .tabs .tab.active {
+    background-color: #6C645F;
+    color: #D3D3D3;
+    font-weight: bold;
+}
+
+.OrderTransaction .content .products .tab-content {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #6C645F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+.OrderTransaction .content .products .tab-content .coffee {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.OrderTransaction .content .products .tab-content .coffee .section {
+    margin: 1em 0;
+    width: 90%;
+    cursor: pointer;
+    min-height: 60px;
+    background-color: #BCB0A9;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.OrderTransaction .content .products .tab-content .coffee .section.active {
+    background-color: #EEDFD6;
+    min-height: 240px;
+    max-height: 240px;
+}
+
+.OrderTransaction .content .products .tab-content .coffee .section h3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+    color: #3A322D;
+}
+
+.OrderTransaction .content .products .tab-content .coffee .section .list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    background-color: #ACA29C;
+}
+
+.OrderTransaction .content .products .tab-content .coffee .section .list .product {
+    height: 150px;
+    width: 150px;
+    border-radius: 0.5em;
+    background-color: #ccc;
+}
+
+.OrderTransaction .content .orders {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.OrderTransaction .content .orders .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    background-color: #D8CEC8;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.OrderTransaction .content .orders .list .header {
+    padding: 0.5em 1em;
+    background-color: #C1B9B5;
+}
+
+.OrderTransaction .content .orders .list .header h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.OrderTransaction .content .orders .list .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.OrderTransaction .content .orders .list .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    background-color: #C1B9B5;
+}
+
+.OrderTransaction .content .orders .list .footer h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.OrderTransaction .content .orders .button {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 0.5em;
+}
+
+.OrderTransaction .content .orders .button h1 {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}

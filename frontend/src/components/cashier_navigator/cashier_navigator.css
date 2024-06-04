@@ -1,0 +1,82 @@
+.CashierNavigator {
+    height: 100vh;
+    width: 7.5%;
+    background-color: #4B4541;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CashierNavigator .upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60%;
+}
+
+.CashierNavigator .upper img {
+    width: 100%;
+}
+
+.CashierNavigator .upper .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CashierNavigator .upper .item .container {
+    background-color: #C8BCB6;
+    border-radius: 0.5em;
+    height: 60px;
+    width: 60px;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CashierNavigator .upper .item .queue {
+    background-color: var(--primary);
+}
+
+.CashierNavigator .upper .item .container span {
+    font-size: 3em;
+    color: #D8CEC8;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+}
+
+.CashierNavigator .lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30%;
+}
+
+.CashierNavigator .lower img {
+    width: 100%;
+}
+
+.CashierNavigator .lower .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CashierNavigator .lower .item .container {
+    background-color: #C8BCB6;
+    border-radius: 0.5em;
+    height: 60px;
+    width: 60px;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CashierNavigator .lower .item .logout {
+    background-color: #867E79;
+}
