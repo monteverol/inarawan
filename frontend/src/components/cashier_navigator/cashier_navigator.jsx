@@ -14,6 +14,10 @@ function CashierNavigator () {
         navigate('/');
     }
 
+    const handleTransaction = () => {
+        navigate('/order_transaction');
+    }
+
     const handleIntro = () => {
         navigate('/intro');
     }
@@ -26,7 +30,7 @@ function CashierNavigator () {
         <div className="CashierNavigator">
             <div className="upper">
                 <img src={logo} alt="logo" onClick={handleIntro} />
-                <div className="item">
+                <div className="item" onClick={handleTransaction}>
                     <div className="container">
                         <img src={document_icon} alt="Order Transaction"/>
                     </div>

@@ -1,10 +1,12 @@
 import React, { act, useState } from 'react';
 import CashierNavigator from '../../components/cashier_navigator/cashier_navigator';
 import './order_transaction.css';
+import ConfirmOrder from '../../components/confirm_order/confirm_order';
 
 function OrderTransaction() {
     const [activeTab, setActiveTab] = useState('Coffee');
     const [expandedSection, setExpandedSection] = useState();
+    const [processingOrder, setProcessingOrder] = useState(false);
 
     const toggleSection = (section) => {
         setExpandedSection(expandedSection === section ? null : section);
@@ -12,6 +14,7 @@ function OrderTransaction() {
 
     return (
         <div className="OrderTransaction">
+            {processingOrder && <ConfirmOrder />}
             <CashierNavigator />
             <div className="content">
                 <div className="products">
@@ -76,7 +79,7 @@ function OrderTransaction() {
                             <h1>P 0.00</h1>
                         </div>
                     </div>
-                    <div className="button">
+                    <div className="button" onClick={() => setProcessingOrder(true)}>
                         <h1>CONFIRM ORDER</h1>
                     </div>
                 </div>
